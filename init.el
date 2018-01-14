@@ -24,8 +24,10 @@
 (package-initialize)
 
 
-(add-hook 'diary-list-entries-hook 'diary-sort-entries t)
 
+;; Calendar and Diary
+(add-hook 'diary-list-entries-hook 'diary-sort-entries t)
+(setq diary-file "~/.emacs.d/diary")
 (add-hook 'calendar-load-hook
 	  (lambda () (calendar-set-date-style 'european)))
 
