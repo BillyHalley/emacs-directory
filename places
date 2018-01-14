@@ -1,0 +1,10 @@
+;;; -*- coding: utf-8 -*-
+(("/home/billy/Prolog/Progetto/test_progetto.pl" . 5444)
+ ("/home/billy/Prolog/Progetto/json_parsing.pl" . 1762)
+ ("/home/billy/Prolog/"
+  (dired-filename . "/home/billy/Prolog/Progetto"))
+ ("/home/billy/Prolog/Progetto/"
+  (dired-filename . "/home/billy/Prolog/Progetto/json_parsing.pl"))
+ ("/home/billy/.emacs.d/init.el" . 246)
+ ("/home/billy/.emacs.d/elpa/slime-2.20/slime-autoloads.el" . 1408)
+ ("/home/billy/.emacs.d/elpa/macrostep-0.9/macrostep-autoloads.el" . 1711))

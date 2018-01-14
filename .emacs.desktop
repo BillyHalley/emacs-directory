@@ -1,0 +1,74 @@
+;; -*- mode: emacs-lisp; coding: emacs-mule; -*-
+;; --------------------------------------------------------------------------
+;; Desktop File for Emacs
+;; --------------------------------------------------------------------------
+;; Created Sun Jan 14 12:12:56 2018
+;; Desktop file format version 206
+;; Emacs version 24.5.1
+
+;; Global section:
+(setq desktop-saved-frameset [frameset 1 (23131 15160 759436 419000) (desktop . "206") "billy@U-Ryzen16H" nil nil ((((tty-type . "xterm-256color") (tty . "/dev/tty") (display-type . color) (background-mode . dark) (foreground-color . "#eeeeec") (cursor-color . "#fce94f") (background-color . "#222") (font . "tty") (height . 60) (width . 101) (modeline . t) (unsplittable) (menu-bar-lines . 1) (frameset--id . "7D44-3ED8-F877-8B9B") (frameset--mini t) (minibuffer . t)) ((min-height . 8) (min-width . 10) (min-height-ignore . 4) (min-width-ignore . 2) (min-height-safe . 2) (min-width-safe . 2) (min-pixel-height . 8) (min-pixel-width . 10) (min-pixel-height-ignore . 4) (min-pixel-width-ignore . 2) (min-pixel-height-safe . 2) (min-pixel-width-safe . 2)) vc (pixel-width . 101) (pixel-height . 58) (total-width . 101) (total-height . 58) (normal-height . 1.0) (normal-width . 1.0) (combination-limit) (leaf (pixel-width . 101) (pixel-height . 29) (total-width . 101) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "init.el" (selected . t) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 246) (start . 1))) (leaf (last . t) (pixel-width . 101) (pixel-height . 29) (total-width . 101) (total-height . 29) (normal-height . 0.5) (normal-width . 1.0) (buffer "*Warnings*" (selected) (hscroll . 0) (fringes 0 0 nil) (margins nil) (scroll-bars 0 0 t nil) (vscroll . 0) (dedicated) (point . 344) (start . 1)))))])
+(setq desktop-missing-file-warning nil)
+(setq tags-file-name nil)
+(setq tags-table-list nil)
+(setq search-ring '("find_json" "find_element"))
+(setq regexp-search-ring nil)
+(setq register-alist nil)
+(setq file-name-history '("~/.emacs.d/init.el" "~/Prolog/Progetto/test_progetto.pl" "~/Prolog/Progetto/test_progetto.plt" "~/Prolog/Progetto/" "~/.emacs.d/init.el" "~/Prolog/Progetto/json_parsing.pl" "~/Prolog/Progetto/json_parse.pl" "~/Prolog/Progetto/json_parse.el" "~/Prolog/Progetto/json_parsing.el"))
+
+;; Buffer section -- buffers listed in same order as in buffer list:
+(desktop-create-buffer 206
+  "/home/billy/.emacs.d/init.el"
+  "init.el"
+  'emacs-lisp-mode
+  nil
+  246
+  '(nil nil)
+  nil
+  nil
+  '((buffer-file-coding-system . prefer-utf-8-unix)))
+
+(desktop-create-buffer 206
+  nil
+  "Progetto"
+  'dired-mode
+  nil
+  221
+  '(nil nil)
+  t
+  '("/home/billy/Prolog/Progetto/")
+  '((fill-column . 70) (case-fold-search . t) (truncate-lines)))
+
+(desktop-create-buffer 206
+  nil
+  "Prolog"
+  'dired-mode
+  nil
+  373
+  '(nil nil)
+  t
+  '("/home/billy/Prolog/")
+  '((fill-column . 70) (case-fold-search . t) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/billy/Prolog/Progetto/json_parsing.pl"
+  "json_parsing.pl"
+  'prolog-mode
+  nil
+  1762
+  '(1985 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
+
+(desktop-create-buffer 206
+  "/home/billy/Prolog/Progetto/test_progetto.pl"
+  "test_progetto.pl"
+  'prolog-mode
+  nil
+  5444
+  '(6046 nil)
+  nil
+  nil
+  '((buffer-file-coding-system . undecided-unix) (fill-column . 70) (case-fold-search . t) (truncate-lines)))
+
