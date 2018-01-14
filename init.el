@@ -15,14 +15,13 @@
 (let* ((no-ssl (and (memq system-type '(windows-nt ms-dos))
 		    (not (gnutls-available-p))))
        (proto (if no-ssl "http" "https")))
-  ;; Comment/uncomment these two lines to enable/disable MELPA and MELPA Stable as desired
-  ;;(add-to-list 'package-archives (cons "melpa" (concat proto "://melpa.org/packages/")) t)
   (add-to-list 'package-archives (cons "melpa-stable" (concat proto "://stable.melpa.org/packages/")) t)
   (when (< emacs-major-version 24)
     ;; For important compatibility libraries like cl-lib
     (add-to-list 'package-archives '("gnu" . (concat proto "://elpa.gnu.org/packages/")))))
 (package-initialize)
 
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
 
 ;; Calendar and Diary
@@ -38,20 +37,19 @@
 				 "Giugno" "Luglio" "Agosto" "Settembre"
 				 "Ottobre" "Novembre" "Dicembre"])
 
-
-
-
+;; Line Numbers
 (global-linum-mode 1)
 (setq linum-format "%4d \u2502 ")
 
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-
+;; Prolog stuff
 (autoload 'prolog-mode "prolog" "Major mode for editing Prolog programs." t)
 (add-to-list 'auto-mode-alist '("\\.pl\\'" . prolog-mode))
 
 (require 'ediprolog)
 (global-set-key [f7] 'ediprolog-dwim)
 
+
+;; Windows
 (require 'windows)
 (require 'recentf)
 
@@ -86,8 +84,8 @@
 (show-paren-mode 1)
 
 ;;; Correctly indent lisp code
-;;; (add-hook 'lisp-mode-hook '(lambda ()
-;;;    (local-set-key (kbd "RET") 'newline-and-indent)))
+(add-hook 'lisp-mode-hook '(lambda ()
+   (local-set-key (kbd "RET") 'newline-and-indent)))
 
 ;;; Transient mark mode
 (transient-mark-mode)
