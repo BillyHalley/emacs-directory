@@ -3,16 +3,12 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector
-   [default default default italic underline success warning error])
  '(ansi-color-names-vector
    ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
- '(ansi-term-color-vector
-   [unspecified "#2e2e2e" "#bc8383" "#7f9f7f" "#d0bf8f" "#6ca0a3" "#dc8cc3" "#8cd0d3" "#b6b6b6"])
  '(custom-enabled-themes (quote (custom-tango-dark)))
  '(custom-safe-themes
    (quote
-    ("5e3f1b0c80e2f16f137a944ad601edc51a6441173e89d6c021bad582ff5bc312" "c8e0b45383d094ed9b818cdd02381cf6251f6efca83c98c4bff67eb91e61ff9f" "88bc19a48aff3dd8097c87161986c2650e0e90ad671a3ac4bb68d0565317c37b" "69b3ba0d5b9e664124cd4a46f302713cb879fb54d61948de27fe81c33da5c4f9" "9371d4ab88d660529e7ca6160df597e5179384876220c26a8ffc1c565daa0cde" "9281b67d98e7fb02db46831e0223480d84ce083d7b40d5d84b5805dbc6ee3797" "a67b6cb65db241e033b6aed5eeaf0805a1b62e598cedc605c71d003a1d5c00c6" "7e47ded9f23f6b4c069f19569935efdc5ac8811e0854bf64ca94bdb20ad7b929" "971f0e2533cd75c460e137538110b4ccc6057d846f6b5c34e6ab4776e298823c" "1a094b79734450a146b0c43afb6c669045d7a8a5c28bc0210aba28d36f85d86f" default)))
+    ("8d3dfb73ec5c70c423868b838177979eab183e718a19489d203796d30f4117ab" "e1363361bf13747de20686a6584291b2b6c12e0db7d1e1ed282f770c8bb6ee9f" "8fe23fc7d3bab0cd26309dbb753ee30d3bd56df00b1341cc0e2933e81d1ca7e5" default)))
  '(custom-theme-directory "~/.emacs.d/themes"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -67,21 +63,21 @@
 (global-set-key [f7] 'ediprolog-dwim)
 
 
-;; Windows
-(require 'windows)
-(require 'recentf)
+;; ;; Windows
+;; (require 'windows)
+;; (require 'recentf)
 
-;; -- Load the saved windows automatically on boot
-(add-hook 'window-setup-hook 'resume-windows)
+;; ;; -- Load the saved windows automatically on boot
+;; ;;(add-hook 'window-setup-hook 'resume-windows)
 
-;; -- Save place in file
-(setq-default save-place t)
+;; ;; -- Save place in file
+;; (setq-default save-place t)
 
-;; --  Use this command to quit and save your setup
-(define-key ctl-x-map "C" 'see-you-again)
+;; ;; --  Use this command to quit and save your setup
+;; (define-key ctl-x-map "C" 'see-you-again)
 
-;; -- Set up window saving!! Place at end of .emacs file
-(win:startup-with-window)
+;; ;; -- Set up window saving!! Place at end of .emacs file
+;; (win:startup-with-window)
 
 
 

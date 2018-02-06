@@ -42,7 +42,7 @@ Semantic, and Ansi-Color faces are included.")
       (plum-1 "#e090d7") (plum-2 "#75507b") (plum-3 "#5c3566")
       (red-1 "#ef2929")  (red-2 "#cc0000")  (red-3 "#a40000")
       (alum-1 "#eeeeec") (alum-2 "#d3d7cf") (alum-3 "#babdb6")
-      (alum-4 "#888a85") (alum-5 "#555753") (alum-6 "#000000")
+      (alum-4 "#888a85") (alum-5 "#555753") (alum-6 "black")
       ;; Not in Tango palette; used for better contrast.
       (cham-0 "#b4fa70") (blue-0 "#8cc4ff") (plum-0 "#e9b2e3")
       (red-0 "#ff4b4b")  (alum-5.5 "#41423f") (alum-7 "#212526"))
@@ -51,7 +51,7 @@ Semantic, and Ansi-Color faces are included.")
    'custom-tango-dark
    ;; Ensure sufficient contrast on low-color terminals.
    `(default ((((class color) (min-colors 4096))
-	       (:foreground ,alum-1 :background , "black"))
+	       (:foreground ,alum-1 :background ,alum-6))
 	      (((class color) (min-colors 256))
 	       (:foreground ,alum-1 :background "black"))
 	      (,class
