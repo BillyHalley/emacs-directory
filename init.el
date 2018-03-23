@@ -3,12 +3,6 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-names-vector
-   ["#212526" "#ff4b4b" "#b4fa70" "#fce94f" "#729fcf" "#e090d7" "#8cc4ff" "#eeeeec"])
- '(custom-enabled-themes (quote (custom-tango-dark)))
- '(custom-safe-themes
-   (quote
-    ("8d3dfb73ec5c70c423868b838177979eab183e718a19489d203796d30f4117ab" "e1363361bf13747de20686a6584291b2b6c12e0db7d1e1ed282f770c8bb6ee9f" "8fe23fc7d3bab0cd26309dbb753ee30d3bd56df00b1341cc0e2933e81d1ca7e5" default)))
  '(custom-theme-directory "~/.emacs.d/themes"))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -109,3 +103,10 @@
 (add-hook 'f90-mode-hook
 	    (lambda () (local-set-key (kbd "RET") 'reindent-then-newline-and-indent)))
 
+
+
+
+;;; Java
+
+(add-to-list 'load-path "~/.emacs.d/jdee-2.4.1/lisp")
+(load "jde")
