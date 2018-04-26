@@ -4,8 +4,7 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(custom-enabled-themes (quote (tango-dark)))
- '(jdee-server-dir "~/.emacs.d/Java")
- '(package-selected-packages (quote (php-mode jdee ## slime magit))))
+ '(package-selected-packages (quote (jdee ## slime magit))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -104,11 +103,5 @@
 
 ;;; Java
 
-;;(add-to-list 'load-path "~/.emacs.d/jdee-2.4.1/lisp")
-;;(load "jdee")
-
-
-;;;; PHP
-
-(require 'php-mode)
-(require 'web-mode)
+(add-to-list 'load-path "~/.emacs.d/jdee-2.4.1/lisp")
+(load "jdee")

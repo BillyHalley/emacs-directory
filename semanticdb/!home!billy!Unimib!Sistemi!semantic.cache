@@ -1,0 +1,36 @@
+;; Object semanticdb-project-database-file
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "semanticdb-project-database-file"
+  :tables
+  (list
+    (semanticdb-table "semanticdb-table"
+      :major-mode jdee-mode
+      :tags 
+        '( ("java.io.DataInputStream" include nil nil [1 32])
+            ("java.io.IOException" include nil nil [33 60])
+            ("java.net.InetAddress" include nil nil [61 89])
+            ("java.net.Socket" include nil nil [90 113])
+            ("java.io.PrintWriter" include nil nil [114 141])
+            ("java.util.*" include nil nil [142 161])
+            ("ReceiverClientSocket" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [227 240]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [203 1259]))                  
+                :type "class")
+                nil [163 1262]))          
+      :file "ReceiverClientSocket.java"
+      :pointmax 1263
+      :unmatched-syntax nil)
+
+)
+  :file "!home!billy!Unimib!Sistemi!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
